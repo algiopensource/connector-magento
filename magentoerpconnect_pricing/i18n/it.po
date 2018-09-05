@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # * magentoerpconnect_pricing
-# 
+#
 # Translators:
 # Accounts-Payable - Alkemics, 2015
 # Antonio Trueba, 2016
@@ -25,18 +25,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: connector-magento (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-11 01:18+0000\n"
-"PO-Revision-Date: 2015-11-05 07:46+0000\n"
-"Last-Translator: <>\n"
-"Language-Team: Italian (http://www.transifex.com/oca/OCA-connector-magento-8-0/language/it/)\n"
+"POT-Creation-Date: 2017-03-23 15:24+0000\n"
+"PO-Revision-Date: 2017-03-23 15:24+0000\n"
+"Last-Translator: OCA Transbot <transbot@odoo-community.org>\n"
+"Language-Team: Italian (http://www.transifex.com/oca/OCA-connector-"
+"magento-8-0/language/it/)\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: magentoerpconnect_pricing
-#: code:addons/magentoerpconnect_pricing/magento_model.py:50
+#: code:addons/magentoerpconnect_pricing/magento_model.py:54
 #, python-format
 msgid ""
 "If you change the pricelist of the backend, the price of all the products "
@@ -44,11 +45,12 @@ msgid ""
 msgstr ""
 
 #. module: magentoerpconnect_pricing
-#: code:addons/magentoerpconnect_pricing/magento_model.py:113
+#: code:addons/magentoerpconnect_pricing/magento_model.py:121
 #, python-format
 msgid ""
 "If you change the pricelist of the website, the price of all the products "
-"linked with this website will be updated in Magento."
+"linked with this website will be updated in Magento if the price update is "
+"active on the backend."
 msgstr ""
 
 #. module: magentoerpconnect_pricing
@@ -67,7 +69,7 @@ msgid "Pricelist"
 msgstr "Listino prezzi"
 
 #. module: magentoerpconnect_pricing
-#: code:addons/magentoerpconnect_pricing/product.py:127
+#: code:addons/magentoerpconnect_pricing/product.py:135
 #, python-format
 msgid "Prices have been updated."
 msgstr ""
@@ -80,14 +82,27 @@ msgstr ""
 #. module: magentoerpconnect_pricing
 #: help:magento.website,pricelist_id:0
 msgid ""
-"The pricelist used to define the prices of the products in Magento for this website.\n"
+"The pricelist used to define the currency of the orders of this website and, "
+"if price update is activated on the backend, the prices of the products in "
+"Magento for this website.\n"
 "Choose a pricelist only if the prices are different for this website.\n"
 "When empty, the default price will be used."
 msgstr ""
 
 #. module: magentoerpconnect_pricing
-#: code:addons/magentoerpconnect_pricing/magento_model.py:49
-#: code:addons/magentoerpconnect_pricing/magento_model.py:112
+#: field:magento.backend,update_prices:0
+msgid "Update prices"
+msgstr ""
+
+#. module: magentoerpconnect_pricing
+#: code:addons/magentoerpconnect_pricing/magento_model.py:53
+#: code:addons/magentoerpconnect_pricing/magento_model.py:120
 #, python-format
 msgid "Warning"
 msgstr "Warning"
+
+#. module: magentoerpconnect_pricing
+#: help:magento.backend,update_prices:0
+msgid ""
+"Whether prices according to the selected pricelist are pushed to Magento"
+msgstr ""
